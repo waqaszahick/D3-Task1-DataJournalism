@@ -21,7 +21,7 @@ var chartGroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 // Import Data
-d3.csv("../startercode/assets/data/data.csv").then(function(scatData) {
+d3.csv("assets/data/data.csv").then(function(scatData) {
 
     // Step 1: Parse Data/Cast as numbers
     // ==============================
