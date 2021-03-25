@@ -57,14 +57,14 @@ d3.csv("assets/data/data.csv").then(function(scatData) {
     // Step 5: Create Circles
     // ==============================
     var circlesGroup = chartGroup.selectAll("circle")
-        .data(scatData)
-        .enter()
-    .append("circle")
-    .attr("cx", d => xLinearScale(d.poverty))
-    .attr("cy", d => yLinearScale(d.healthcare))
-    .attr("r", "12")
-    .attr("fill", "pink")
-        .attr("opacity", ".5");    
+      .data(scatData)
+      .enter()
+      .append("circle")
+      .attr("cx", d => xLinearScale(d.poverty))
+      .attr("cy", d => yLinearScale(d.healthcare))
+      .attr("r", "12")
+      .attr("fill", "pink")
+      .attr("opacity", ".5");    
 
     // Step 6: Initialize tool tip
     // ==============================
@@ -72,7 +72,7 @@ d3.csv("assets/data/data.csv").then(function(scatData) {
       .attr("class", "tooltip")
       .offset([80, -60])
       .html(function(d) {
-        return (`${d.state}<br>Poverty: ${d.poverty}<br>Health Care: ${d.healthcare}`);
+        return (`State: ${d.state}<br>Poverty: ${d.poverty}%<br>Healthcare Lack: ${d.healthcare}%`);
       });
 
     // Step 7: Create tooltip in the chart
@@ -103,10 +103,11 @@ d3.csv("assets/data/data.csv").then(function(scatData) {
       .attr("class", "axisText")
         .text("In Poverty (%)");
     
-    chartGroup.selectAll("text")
+    chartGroup.selectAll(".stateText")
         .data(scatData)
         .enter()
         .append("text")
+        .classed('stateText', true)
         .text(d => d.abbr)
         .attr("font-family", "sans-serif")
         .attr("font-size", "8px")
