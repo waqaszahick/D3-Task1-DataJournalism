@@ -64,8 +64,7 @@ d3.csv("assets/data/data.csv").then(function(scatData) {
     .attr("cy", d => yLinearScale(d.healthcare))
     .attr("r", "12")
     .attr("fill", "pink")
-        .attr("opacity", ".5");
-    
+        .attr("opacity", ".5");    
 
     // Step 6: Initialize tool tip
     // ==============================
