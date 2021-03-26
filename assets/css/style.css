@@ -36,9 +36,9 @@ body {
   padding: 2px;
   padding-top: 8px;
   font: 12px sans-serif;
-  color: white;
+  color: lightpink;
   text-align: center;
-  background: #551aaf;
+  background: black;
   border: 0;
   border-radius: 10px;
 }
@@ -46,6 +46,6 @@ body {
 .axisText {
   font-family: sans-serif;
   font-weight: bold;
-  fill: #551aaf;
+  fill: black;
   text-anchor: middle;
 }

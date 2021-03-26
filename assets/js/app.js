@@ -72,7 +72,7 @@ d3.csv("assets/data/data.csv").then(function(scatData) {
       .attr("class", "tooltip")
       .offset([80, -60])
       .html(function(d) {
-        return (`State: ${d.state}<br>Poverty: ${d.poverty}%<br>Healthcare Lack: ${d.healthcare}%`);
+        return (`State: ${d.state}<br>Poverty: ${d.poverty}%<br>Health Care: ${d.healthcare}%`);
       });
 
     // Step 7: Create tooltip in the chart
