@@ -35,7 +35,7 @@ body {
   height: 60px;
   padding: 2px;
   padding-top: 8px;
-  font: 12px sans-serif;
+  font: 12px candara;
   color: lightpink;
   text-align: center;
   background: black;
@@ -44,8 +44,8 @@ body {
 }
 
 .axisText {
-  font-family: sans-serif;
+  font-family: candara;
   font-weight: bold;
-  fill: black;
+  fill: dark black;
   text-anchor: middle;
 }
