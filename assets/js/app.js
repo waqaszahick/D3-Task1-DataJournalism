@@ -109,7 +109,7 @@ d3.csv("assets/data/data.csv").then(function(scatData) {
         .append("text")
         .classed('stateText', true)
         .text(d => d.abbr)
-        .attr("font-family", "calibri")
+        .attr("font-family", "sans-serif")
         .attr("font-size", "8px")
         .attr("fill", "blue")
         .attr("dy", ".4em")
